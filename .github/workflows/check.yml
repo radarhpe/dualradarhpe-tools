@@ -1,0 +1,29 @@
+name: Python smoke checks
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    env:
+      MPLBACKEND: Agg
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - run: python -m compileall -q calibration evaluation gt_generation gt_generation_optitrack radar_parsing utils visualize
+      - name: Check documented commands
+        run: |
+          python visualize/visualize_radarpcl_with_gt.py --help
+          python visualize/visualize_pointclouds.py --help
+          python visualize/visualize_rtpose_data.py --help
+          python calibration/sens2sens_ts_mapping.py --help
+          python radar_parsing/repack_timeonly.py --help
+          python radar_parsing/DRAE_to_DZYX/radar4D2xyz_complex.py --help
+          python utils/kitti2time_converter.py --help

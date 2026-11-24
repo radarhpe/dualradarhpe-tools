@@ -1,0 +1,48 @@
+import numpy as np
+
+j_order = {
+    "WaistLFront": 0,
+    "WaistRFront": 1,
+    "WaistLBack": 2,
+    "WaistRBack": 3,
+    "BackTop": 4,
+    "Chest": 5,
+    "BackLeft": 6,
+    "BackRight": 7,
+    "HeadTop": 8,
+    "HeadFront": 9,
+    "HeadSide": 10,
+    "LShoulderBack": 11,
+    "LShoulderTop": 12,
+    "LElbowOut": 13,
+    "LUArmHigh": 14,
+    "LHandOut": 15,
+    "LWristOut": 16,
+    "LWristIn": 17,
+    "RShoulderBack": 18,
+    "RShoulderTop": 19,
+    "RElbowOut": 20,
+    "RUArmHigh": 21,
+    "RHandOut": 22,
+    "RWristOut": 23,
+    "RWristIn": 24,
+    "LKneeOut": 25,
+    "LThigh": 26,
+    "LAnkleOut": 27,
+    "LShin": 28,
+    "LToeOut": 29,
+    "LToeIn": 30,
+    "RKneeOut": 31,
+    "RThigh": 32,
+    "RAnkleOut": 33,
+    "RShin": 34,
+    "RToeOut": 35,
+    "RToeIn": 36,
+    "SensorBox": 37
+}
+
+gt_select = ["WaistLFront", "WaistRFront", "WaistLBack", "WaistRBack", "WaistRBack", 
+             "RKneeOut", "RAnkleOut", "WaistLBack", "LKneeOut", "LAnkleOut", "BackTop", 
+             "HeadTop", "RShoulderTop","RElbowOut", "RWristOut", "LShoulderTop", 
+             "LElbowOut", "LWristOut", "SensorBox"]
+

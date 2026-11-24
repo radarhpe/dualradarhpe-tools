@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "Please cite the DualRadarHPE paper when using this toolkit or dataset."
+title: DualRadarHPE dataset tools
+url: https://radarhpe.github.io/
+authors:
+  - family-names: Nguyen
+    given-names: Trung
+  - family-names: Rai
+    given-names: Prashant Kumar
+  - family-names: Serbenyuk
+    given-names: Nikolay
+  - family-names: Ghabcheloo
+    given-names: Reza
+  - family-names: Strokina
+    given-names: Nataliya
+preferred-citation:
+  type: article
+  title: A Multi-Sensor Dataset for 3D Human Pose Estimation Using Imaging Radar
+  authors:
+    - family-names: Nguyen
+      given-names: Trung
+    - family-names: Rai
+      given-names: Prashant Kumar
+    - family-names: Serbenyuk
+      given-names: Nikolay
+    - family-names: Ghabcheloo
+      given-names: Reza
+    - family-names: Strokina
+      given-names: Nataliya
+  journal: IEEE Open Journal of Signal Processing
+  year: 2026
+  volume: 7
+  start: 753
+  end: 765
+  doi: 10.1109/OJSP.2026.3711537
